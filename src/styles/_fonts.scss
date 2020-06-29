@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik'),
+        url('../assets/fonts/Rubik-Regular.woff') format('woff'),
+        url('../assets/fonts/Rubik-Regular.woff2') format('woff2')
+        url('../assets/fonts/Rubik-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham'),
+        url('../assets/fonts/Gotham-Book.woff') format('woff'),
+        url('../assets/fonts/Gotham-Book.woff2') format('woff2')
+        url('../assets/fonts/Gotham-Book.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}

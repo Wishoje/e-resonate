@@ -1,0 +1,206 @@
+@import './variables';
+@import './fonts';
+
+.error {
+    color: $warning-color-red;
+    font-size: 12px;
+}
+
+.opacity-low {
+    opacity: 0.6;
+}
+
+/* ===============================================================
+    Header Component
+================================================================= */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: $background-color-light;
+    .header-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 1440px;
+    }
+}
+
+.header-circle-wrapper {
+    display: flex;
+    margin: 0 auto;
+    .header-circle-icon {
+        height: 40px;
+        width: 40px;
+        background-color: $base-color-blue;
+        border-radius: 50%;
+    }
+}
+
+.header-circle-search {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    padding-right: 165px;
+    img {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}
+
+/* ===============================================================
+    ReportForm Component
+================================================================= */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url("../assets/images/background.svg");
+    background-repeat: no-repeat;
+    .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0 73px 0;
+        h1 {
+            font-size: 26px;
+            font-family: 'Gotham', Arial, sans-serif;
+            line-height: 1.5;
+        }
+    }
+}
+
+.form-input {
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px rgba(255, 255, 255, 0.6);
+    background-color: $base-color-black;
+    color: $base-color-white;
+}
+
+.form-report {
+
+    div {
+        margin-top: 24px; 
+        display: flex;
+        flex-direction: column;
+        width: 345px;
+        label {
+            margin-bottom: 8px;
+            font-family: 'Rubik', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            opacity: 0.87;
+        }
+        textarea {
+            height: 178px;
+        }
+        input[type=submit] {
+            background-color: $button-color-blue;
+            border: 0;
+            cursor: pointer;
+            font-family: 'Rubik', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            opacity: 0.87;
+        }
+    }
+    .submit-button {
+        margin-top: 32px;
+    }
+}
+
+/* ===============================================================
+    Footer Component
+================================================================= */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: $background-color-light;
+    height: 194px;
+    .footer-wrapper {
+        display: flex;
+        width: 1440px;
+        flex-direction: column;
+    }
+    .footer-social-icons {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+        a:not(:last-child) {
+            padding-right: 91px;
+        }
+    }
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 32px;
+        div {
+            display: flex;
+            flex-direction: column;
+            flex: 0 32%;
+            text-align: center;
+            align-items: center;
+            font-family: 'Rubik', Arial, sans-serif;
+            font-size: 14px;
+            a { 
+                text-decoration: none;
+                color: $base-color-white;
+            }
+            .footer-link {
+                padding-bottom: 16px;
+            }
+            .footer-button {
+                width: 158px;
+                background-color: $background-color-light;
+                color: $button-text-color;
+                font-family: 'Rubik', Arial, sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.5;
+                opacity: 0.6;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* ===============================================================
+    Mobile mq
+================================================================= */
+@media #{$mq-mobile} {
+    .header-circle-search {
+        display: none;
+    }
+    .form {
+        background-image: none;
+        background-repeat: none;
+        .form-wrapper {
+            width: 100%;
+        }
+    }
+    .form-report {
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        div {
+            width: 100%;
+        }
+    }
+    footer {
+        height: 258px;
+        .footer-links {
+            div {
+                flex: 0 50%;
+            }
+            .button-wrapper {
+                margin-top: 32px;
+                flex: 0 100%;
+            }
+        }
+    }
+}
