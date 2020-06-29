@@ -7,7 +7,7 @@ HOW TO START THE SERVER
 5. Go to http://localhost:3000/
 
 Notes:
-- Fonts are not the same as on the mocks since it was hard to find them.
+- Fonts are not the same as on the mocks.
 - Maximum ViewPort is set to 1440px for the form because of the width of the backround image 
 (not sure if that is how we want for larger screens than 1440px) - please let me know if that needs to be fixed.
 
