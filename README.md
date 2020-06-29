@@ -8,4 +8,6 @@ HOW TO START THE SERVER
 
 Notes:
 - Fonts are not the same as on the mocks since it was hard to find them.
-- Maximum ViewPort is set to 1440px but we might want to expand that for larger screens and also add tablet screens as well.
+- Maximum ViewPort is set to 1440px for the form because of the width of the backround image 
+(not sure if that is how we want for larger screens than 1440px) - please let me know if that needs to be fixed.
+
