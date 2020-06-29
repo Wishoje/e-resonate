@@ -7,5 +7,5 @@ HOW TO START THE SERVER
 5. Go to http://localhost:3000/
 
 Notes:
-- Fonts are not the same as on mocks since it was hard to find them.
+- Fonts are not the same as on the mocks since it was hard to find them.
 - Maximum ViewPort is set to 1440px but we might want to expand that for larger screens and also add tablet screens as well.
